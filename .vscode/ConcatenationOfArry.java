@@ -1,7 +1,14 @@
-class Solution:
-    def getConcatenation(self, nums: List[int]) -> List[int]:
-        ans = []
-        for i in range(2):
-            for num in nums:
-                ans.append(num)
-        return ans
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+
+    }}
+
+    Set<Integer> set = new HashSet<>();for(
+    int num:nums)
+    {
+            if (set.contains(num)) {
+                return true; // Duplicate found
+            }
+            set.add(num);
+        }return false;
+// No duplicates found
