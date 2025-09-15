@@ -1,11 +1,15 @@
-//need to create new ans of length 2*n, so beasically want to return the nums array content twice into new arrya 
-
 class Solution {
   public int[] getConcatenation(int[] nums) {
       int ans [];
-      if (ans[i] == nums [i]){
-        n = 2*n;
+      for (int i = 0 ; i <= nums.length; i++){
+        nums [i] = ans [i];
       }
-      return ans;
+      
+      return nums;
+      
+       for (int j = 0 ; j <= nums.length; j++){
+        nums [i] = ans [i + 2*n];
+      }
+      return nums;
 
 }
