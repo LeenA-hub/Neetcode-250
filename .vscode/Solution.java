@@ -41,3 +41,18 @@ public boolean hasDuplicate2(int[] nums) {
 // we doing neetcode problem 3 on sep 19,2025
 // two string s and t, return true if the two strings are anagrams of each
 // other, otherwise return false.
+public boolean isAnagram(String s, String t) {
+  class Solution {
+    public boolean isAnagram(String s, String t) {
+      for (int i = 0; i <= s.length; i++) {
+        for (int j = 0; j <= t.length; j++) {
+          if (s[i] != t[j]) {
+            return false;
+          }
+
+        }
+      }
+    }
+  }
+
+}
