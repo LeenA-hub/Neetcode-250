@@ -37,3 +37,7 @@ public boolean hasDuplicate2(int[] nums) {
   }
   return false;
 }
+
+// we doing neetcode problem 3 on sep 19,2025
+// two string s and t, return true if the two strings are anagrams of each
+// other, otherwise return false.
