@@ -72,3 +72,9 @@ public int[] twoSum(int[] nums, int target) {
     return new int[] {};
   }
 }
+
+// problem 5 on sep 22,2025
+// best time to buy and sell stock
+public int maxProfit(int[] prices) {
+
+}
