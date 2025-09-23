@@ -61,12 +61,13 @@ public boolean isAnagram(String s, String t) {
   // two sum problem
 public int[] twoSum(int[] nums, int target) {
 
-        for (int i = 0; i <= 0; i++){
+       for (int i = 0; i <= nums.length; i++){
             for (int j = i+ 1; j <=0; j--){
             
-                if (i != j){
+               
                 nums[i] + nums[j] = target;
-                return target;
+                return int[] ;
+
 
 }
             }
