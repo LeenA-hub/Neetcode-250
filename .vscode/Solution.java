@@ -65,9 +65,9 @@ for (int i = 0; i < nums.length; i++){
             
             
                
-                nums[i] + nums[j] = target;
-                return int[] ;
-
+                 if (nums[i] + nums[j] == target) {
+                return new int[] {i, j};
+              
 
 }
             }
