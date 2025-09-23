@@ -56,3 +56,9 @@ public boolean isAnagram(String s, String t) {
   }
 
 }
+
+// we doing problem 4 on sep 20,2025
+// two sum problem
+public int[] twoSum(int[] nums, int target) {
+
+}
