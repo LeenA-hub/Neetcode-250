@@ -16,31 +16,31 @@ class Solution {
 
 }
 
-// we done with neetcode pronlem 2 on sep 18,2025
-public boolean hasDuplicate(int[] nums) {
-  for (int i = 0; i < nums.length - 1; i++) {
-    if (nums[i] == nums[i + 1]) {
-      return true;
-    }
-  }
-  return false;
-}
-// apperteny it didnt accepted my solution even though it passed the cases
-
-public boolean hasDuplicate2(int[] nums) {
-  for (int i = 0; i < nums.length; i++) {
-    for (int j = i + 1; j < nums.length; j++) {
-      if (nums[i] == nums[j]) {
+  // we done with neetcode pronlem 2 on sep 18,2025
+  public boolean hasDuplicate(int[] nums) {
+    for (int i = 0; i < nums.length - 1; i++) {
+      if (nums[i] == nums[i + 1]) {
         return true;
       }
     }
+    return false;
   }
-  return false;
-}
+  // apperteny it didnt accepted my solution even though it passed the cases
 
-// we doing neetcode problem 3 on sep 19,2025
-// two string s and t, return true if the two strings are anagrams of each
-// other, otherwise return false.
+  public boolean hasDuplicate2(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i + 1; j < nums.length; j++) {
+        if (nums[i] == nums[j]) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  // we doing neetcode problem 3 on sep 19,2025
+  // two string s and t, return true if the two strings are anagrams of each
+  // other, otherwise return false.
 public boolean isAnagram(String s, String t) {
   class Solution {
     public boolean isAnagram(String s, String t) {
@@ -57,8 +57,16 @@ public boolean isAnagram(String s, String t) {
 
 }
 
-// we doing problem 4 on sep 20,2025
-// two sum problem
+  // we doing problem 4 on sep 20,2025
+  // two sum problem
 public int[] twoSum(int[] nums, int target) {
 
+        for (int i = 0; i <= 0; i++){
+            for (int j = i+ 1; j <=0; j--){
+            
+                if (i != j){
+                nums[i] + nums[j] = target;
+                return target;
+
 }
+            }
