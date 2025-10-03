@@ -75,10 +75,33 @@ class Solution {
 
   // problem 5 on sep 22,2025
   // best time to buy and sell stock
-public int maxProfit(int[] prices) {
+  public int maxProfit(int[] prices) {
 
+  }
+
+  // problem 6 on Oct 2,2025
+  // product of array except self
+  public int[] productExceptSelf(int[] nums) {
+    int[] newnums = nums;
+    for (int i = 0; i <= nums.length; i++) {
+      switch (i) {
+        case 1:
+          nums[0] = nums[1] * nums[2] * nums[3] * nums[i + 1];
+          return newnums;
+        case 2:
+          nums[1] = nums[0] * nums[2] * nums[3] * nums[i + 1];
+          return newnums;
+        case 3:
+          nums[2] = nums[0] * nums[1] * nums[3] * nums[i + 1];
+          return newnums;
+        case 4:
+          nums[3] = nums[0] * nums[2] * nums[1] * nums[i + 1];
+          return newnums;
+        case 5:
+          nums[i + 1] = nums[0] * nums[2] * nums[3] * nums[1];
+          return newnums;
+      }
+    }
+    return newnums;
+  }
 }
-
-// problem 6 on Oct 2,2025
-// product of array except self
-public int[] productExceptSelf(int[] nums) {
