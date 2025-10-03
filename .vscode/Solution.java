@@ -75,9 +75,9 @@ class Solution {
 
   // problem 5 on sep 22,2025
   // best time to buy and sell stock
-public int maxProfit(int[] prices) {
+  public int maxProfit(int[] prices) {
 
-}
+  }
 
   // problem 6 on Oct 2,2025
   // product of array except self
@@ -96,5 +96,18 @@ public int[] productExceptSelf(int[] nums) {
         return output;
          
 }
-// problem 7 on Oct 2,2025
-// vaild palindrome 
+
+  // problem 7 on Oct 2,2025
+  // vaild palindrome
+public boolean isPalindrome(String s) {
+        for (int i =0; i <= s.length(); i++){
+            for (int j = 0; i <= s.length(); j--){
+                if (j == i){
+                    return true;
+                }
+            }
+            
+        }
+            return false;
+
+    }
