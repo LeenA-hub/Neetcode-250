@@ -96,3 +96,5 @@ public int[] productExceptSelf(int[] nums) {
         return output;
          
 }
+// problem 7 on Oct 2,2025
+// vaild palindrome 
