@@ -16,76 +16,83 @@ class Solution {
 
 }
 
-// we done with neetcode pronlem 2 on sep 18,2025
-public boolean hasDuplicate(int[] nums) {
-  for (int i = 0; i < nums.length - 1; i++) {
-    if (nums[i] == nums[i + 1]) {
-      return true;
-    }
-  }
-  return false;
-}
-// apperteny it didnt accepted my solution even though it passed the cases
-
-public boolean hasDuplicate2(int[] nums) {
-  for (int i = 0; i < nums.length; i++) {
-    for (int j = i + 1; j < nums.length; j++) {
-      if (nums[i] == nums[j]) {
+  // we done with neetcode pronlem 2 on sep 18,2025
+  public boolean hasDuplicate(int[] nums) {
+    for (int i = 0; i < nums.length - 1; i++) {
+      if (nums[i] == nums[i + 1]) {
         return true;
       }
     }
+    return false;
   }
-  return false;
-}
+  // apperteny it didnt accepted my solution even though it passed the cases
 
-// we doing neetcode problem 3 on sep 19,2025
-// two string s and t, return true if the two strings are anagrams of each
-// other, otherwise return false.
-public boolean isAnagram(String s, String t) {
-  class Solution {
-    public boolean isAnagram(String s, String t) {
-      for (int i = 0; i <= s.length; i++) {
-        for (int j = 0; j <= t.length; j++) {
-          if (s[i] != t[j]) {
-            return false;
-          }
-
+  public boolean hasDuplicate2(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i + 1; j < nums.length; j++) {
+        if (nums[i] == nums[j]) {
+          return true;
         }
       }
     }
+    return false;
   }
 
-}
+  // we doing neetcode problem 3 on sep 19,2025
+  // two string s and t, return true if the two strings are anagrams of each
+  // other, otherwise return false.
+  public boolean isAnagram(String s, String t) {
+    class Solution {
+      public boolean isAnagram(String s, String t) {
+        for (int i = 0; i <= s.length; i++) {
+          for (int j = 0; j <= t.length; j++) {
+            if (s[i] != t[j]) {
+              return false;
+            }
 
-// we doing problem 4 on sep 20,2025
-// two sum problem
-public int[] twoSum(int[] nums, int target) {
-  for (int i = 0; i < nums.length; i++) {
-    for (int j = i + 1; j < nums.length; j++) {
+          }
+        }
+      }
+    }
 
-      if (nums[i] + nums[j] == target) {
-        return new int[] { i, j };
+  }
+
+  // we doing problem 4 on sep 20,2025
+  // two sum problem
+  public int[] twoSum(int[] nums, int target) {
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i + 1; j < nums.length; j++) {
+
+        if (nums[i] + nums[j] == target) {
+          return new int[] { i, j };
+
+        }
 
       }
-
+      return new int[] {};
     }
-    return new int[] {};
   }
-}
 
-// problem 5 on sep 22,2025
-// best time to buy and sell stock
+  // problem 5 on sep 22,2025
+  // best time to buy and sell stock
 public int maxProfit(int[] prices) {
 
 }
 
-// problem 6 on Oct 2,2025
-// product of array except self
+  // problem 6 on Oct 2,2025
+  // product of array except self
 public int[] productExceptSelf(int[] nums) {
-      for (int i = 0; i <= nums.length; i++) {
-           nums[i] != nums[i+1];
-           int newNums = nums[1] * nums[i+1];
+  int n = nums.length;
+  int[] output = new int[n];
+  int prodcut = 1;
 
-    }
-    return newNums;
+      for (int i = 0; i <= nums.length; i++) {
+        for (int j = 0; j <= nums.length; j++) {
+          if (i == j) continue; 
+            product *= nums[j];
+          
+          output[i] = product;
+        }
+        return output;
+         
 }
