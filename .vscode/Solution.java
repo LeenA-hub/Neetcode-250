@@ -80,5 +80,5 @@ public int maxProfit(int[] prices) {
 }
 
 // problem 6 on Oct 2,2025
-// contain duplicate
-public boolean containsDuplicate(int[] nums) {
+// product of array except self
+public int[] productExceptSelf(int[] nums) {
